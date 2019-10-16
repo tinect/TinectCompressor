@@ -1,18 +1,11 @@
-# TinectMailArchive
+# TinectCompressor
 
 ## Description
 
-This plugins adds an MailArchive to your Shopware-Backend stored in Database.
-
-Please note: TinectMailArchive won't catch your mails, to prevent sending mails from your shop! Use MailCatcher for this job, as it is a job in developing-state.
+This plugins compresses JS by using JSqueeze and CSS by using MullieMinify.
 
 ### Features
 
-![Preview](preview.jpg)
-
-- Download Mail as EML-File
-- Search Mails
-- shows notification for new mails, if accepted
 
 ### Planned Features
 
@@ -21,15 +14,14 @@ Please note: TinectMailArchive won't catch your mails, to prevent sending mails 
 
 ## Zip-Installation
 
-* Download the [latest plugin version](https://github.com/tinect/TinectMailArchive/releases/latest/)
+* Download the [latest plugin version](https://github.com/tinect/TinectCompressor/releases/latest/)
 * Upload and install plugin using Plugin Manager
 
 ## Contributing
 
-Feel free to fork and send [pull requests](https://github.com/tinect/TinectMailArchive)!
+Feel free to fork and send [pull requests](https://github.com/tinect/TinectCompressor)!
 
 
 ## Licence
 
 This project uses the [MIT License](LICENCE.md).
-Thanks to FroshMailCatcher for initial work :-)
