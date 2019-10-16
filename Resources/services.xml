@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+
+        <service id="tinect_compressor.jscompressor" class="TinectCompressor\Components\JSCompressor" decorates="js_compressor" >
+            <argument type="service" id="tinect_compressor.jscompressor.inner"/>
+        </service>
+
+        <service id="tinect_compressor.csscompressor" class="TinectCompressor\Components\CSSCompressor" decorates="less_compiler">
+            <argument type="service" id="tinect_compressor.csscompressor.inner"/>
+        </service>
+
+    </services>
+
+</container>

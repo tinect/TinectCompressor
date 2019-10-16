@@ -1,0 +1,24 @@
+{
+  "name": "tinect/compressor",
+  "keywords": [
+    "shopware",
+    "compress"
+  ],
+  "description": "",
+  "license": "MIT",
+  "type": "shopware-plugin",
+  "authors": [
+    {
+      "name": "tinect",
+      "homepage": "https://github.com/tinect",
+      "role": "Developer"
+    }
+  ],
+  "extra": {
+    "installer-name": "TinectCompressor"
+  },
+  "require": {
+    "composer/installers": "~1.0",
+      "matthiasmullie/minify": "~1.0"
+  }
+}
