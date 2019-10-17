@@ -80,9 +80,18 @@ class CSSCompressor implements LessCompiler
             $minifier = new MullieMinify\CSS();
             $minifier->add($cssResult);
             $cssResult = $minifier->minify();
+            $cssResult = $this->shortenZeroRem($cssResult);
         }
 
         return $cssResult;
     }
 
+    /**
+     * @param $content
+     * @return string
+     */
+    private function shortenZeroRem($content)
+    {
+        return preg_replace('/(?<=[:(, ])(-?0*(\.0+)?)(?<=0)rem(?=[ ,);}])/', '\\1', $content);
+    }
 }
